@@ -3,6 +3,10 @@ public class Aritmetica {
     int operando2;
 
     // Constructor
+    public Aritmetica(){
+
+    }
+
     public  Aritmetica(int op1, int op2){
         operando1 =op1;
         operando2 =op2;
@@ -24,5 +28,9 @@ public class Aritmetica {
 //        aritmetica1.operando2=7;
         aritmetica1.sumar();
         aritmetica1.restar();
+        var aritmetica2 = new Aritmetica();
+        aritmetica2.operando1 = 12;
+        aritmetica2.operando2 = 16;
+        aritmetica2.sumar();
     }
 }
