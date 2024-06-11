@@ -1,12 +1,14 @@
 package persona;
 
 public class Persona {
+    static int contadorPersonas = 0;
    private String nombre;
    private String apellido;
 
    public Persona(String nombre, String apellido){
        this.nombre = nombre;
        this.apellido = apellido;
+       Persona.contadorPersonas++;
    }
 
    @Override
