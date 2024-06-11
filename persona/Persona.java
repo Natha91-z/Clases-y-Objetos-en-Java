@@ -2,18 +2,19 @@ package persona;
 
 public class Persona {
     static int contadorPersonas = 0;
+    private int idPersona;
    private String nombre;
    private String apellido;
 
    public Persona(String nombre, String apellido){
        this.nombre = nombre;
        this.apellido = apellido;
-       Persona.contadorPersonas++;
+       this.idPersona = Persona.contadorPersonas;
    }
 
    @Override
    public String toString(){
-       return "Nombre: " + this.nombre + ", Apellido" + this.apellido + " Dir. Mem: " + super.toString();
+       return "Id: " + this.idPersona + "Nombre: " + this.nombre + ", Apellido" + this.apellido + " Dir. Mem: " + super.toString();
    }
 
     void mostrarPersona(){
