@@ -9,6 +9,11 @@ public class Persona {
        this.apellido = apellido;
    }
 
+   @Override
+   public String toString(){
+       return "Nombre: " + this.nombre + ", Apellido" + this.apellido + " Dir. Mem: " + super.toString();
+   }
+
     void mostrarPersona(){
         System.out.println("Nombre" + this.nombre);
         System.out.println("Apellido" + this.apellido);
